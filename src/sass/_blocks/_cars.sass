@@ -1,0 +1,57 @@
+.cars
+    width: 100%
+    height: 500px
+    background-color:  #040d21
+    &__title
+        font-weight: bold
+        font-size: 30px
+        line-height: 37px
+        color: #FFFFFF
+        text-align: center
+        padding-top: 100px
+    &__subtitle
+        font-weight: 500
+        font-size: 17px
+        line-height: 140%
+        color: #8193B2
+        text-align: center
+        padding-top: 10px
+    &__trucks
+        height: 50px
+        display: flex
+        justify-content: center
+        padding-top: 80px
+        &_1
+            padding-right: 120px
+        &_3
+            padding-left: 120px
+        li
+            position: relative
+            list-style-type: none
+            font-style: normal
+            font-weight: 500
+            font-size: 20px
+            line-height: 24px
+            color: #FFFFFF
+            padding-top: 7px
+            &::before
+                    content: ''
+                    position: absolute
+                    left: -15px
+                    top: 14px
+                    width: 0
+                    height: 0
+                    border-left: 5px solid transparent
+                    border-right: 5px solid transparent
+                    border-top: 10px solid #FFFFFF
+    &__background
+        position: relative
+        &_img1
+            position: absolute
+            right: 130px
+            z-index: 3
+        &_img2
+            position: absolute
+            right: 40px
+            top: -160px
+            z-index: 2
