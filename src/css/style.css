@@ -210,10 +210,10 @@
 }
 .service__items_lastcard .lastcard__button_order {
   position: absolute;
-  left: 345px;
-  bottom: 70px;
-  width: 200px;
-  height: 60px;
+  left: 50px;
+  top: 180px;
+  width: 260px;
+  height: 45px;
   background: #FFFFFF;
   border-radius: 5px;
   font-weight: 600;
@@ -242,11 +242,16 @@
 }
 .service__items_card_content {
   position: relative;
+  transition: 0.1s;
+}
+.service__items_card_content_active {
+  visibility: hidden;
 }
 .service__items_card .card__content_more_second {
+  overflow: hidden;
   visibility: hidden;
   height: 250px;
-  width: 300px;
+  width: 0;
   position: absolute;
   right: -300px;
   background-color: rgba(50, 132, 255, 0.7);
@@ -264,7 +269,7 @@
   color: white;
 }
 .service__items_card .card__button_order_second {
-  margin-top: 61px;
+  margin-top: 98px;
   width: 200px;
   height: 40px;
   background: #FFFFFF;
@@ -280,6 +285,7 @@
 }
 .service__items_card .card__content_more_second_active {
   visibility: visible;
+  width: 300px;
   right: 0;
   transition: 0.2s;
   opacity: 1;
@@ -287,7 +293,7 @@
 .service__items_card .card__content_more {
   visibility: hidden;
   height: 250px;
-  width: 300px;
+  width: 0;
   position: absolute;
   left: -300px;
   background-color: rgba(50, 132, 255, 0.9);
@@ -309,6 +315,7 @@
   text-align: center;
 }
 .service__items_card .card__content_more_active {
+  width: 300px;
   visibility: visible;
   left: 0;
   transition: 0.2s;
@@ -556,4 +563,43 @@
   width: 150px;
   border: 1px solid #DCDCDC;
   transform: rotate(-90deg);
+}
+
+.work__arrow {
+  padding-top: 15px;
+}
+.work__title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  color: #2E2E2E;
+}
+.work__col1, .work__col2 {
+  padding-top: 90px;
+  display: flex;
+  justify-content: space-around;
+}
+.work__col1_item, .work__col2_item {
+  width: 220px;
+  position: relative;
+}
+.work__col1_item .bckgr, .work__col2_item .bckgr {
+  position: absolute;
+  top: -45px;
+  left: 70px;
+}
+.work__col1 .descr, .work__col2 .descr {
+  display: flex;
+  width: 250px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 140%;
+  color: #2E2E2E;
+}
+.work__col1 .descr__text, .work__col2 .descr__text {
+  margin-left: 20px;
+}
+.work__col2 {
+  padding-top: 200px;
 }/*# sourceMappingURL=style.css.map */
